@@ -1,0 +1,137 @@
+body {
+  width: 100%;
+  height: auto;
+  /* padding: 5%; */
+  background-image: url(./images/background.jpg);
+
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+h3,
+h2,
+p {
+  /* border: 1px solid red; */
+  font-family: sans-serif;
+}
+
+/* h1{
+    font-family: sans-serif; 
+    border: 1px solid red;
+} */
+#sevenDays {
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  background-color: #282828;
+  margin-bottom: 20px;
+}
+
+#sevenDays > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* border: 1px solid red; */
+  border-left: 0.1px solid gray;
+}
+#sevenDays > div:nth-child(1) {
+  border-left: none;
+  /* border: 1px solid red; */
+}
+
+#sevenDays > div img {
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid red; */
+}
+
+span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* border: 1px solid red; */
+}
+
+#content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#search-bar {
+  width: 20%;
+  /* max-width: 700px; */
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 1px 5px;
+  backdrop-filter: blur(4px) saturate(80%);
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 10px 10px;
+  font-size: 15px;
+  color: #cac7ff;
+  border-radius: 60px;
+}
+
+::placeholder {
+  color: #cac7ff;
+}
+
+#search-bar button img {
+  width: 20px;
+  /* border: 1px solid red; */
+}
+
+#search-bar button {
+  border: 0;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background: #58629b;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 400px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 400px;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+}
